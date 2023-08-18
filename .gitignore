@@ -41,4 +41,18 @@ app.*.map.json
 # Android Studio will place build artifacts here
 /android/app/debug
 /android/app/profile
+/android/app/stage
 /android/app/release
+
+/assets
+/flutter_launcher_icons*
+.vscode
+
+# Generated files
+**/*.g.dart
+**/*.freezed.dart
+**/*-model.js
+**/*.mocks.dart
+
+# secrets
+**/*.env
