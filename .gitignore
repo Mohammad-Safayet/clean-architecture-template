@@ -43,8 +43,6 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 
-/assets
-/flutter_launcher_icons*
 .vscode
 
 # Generated files
