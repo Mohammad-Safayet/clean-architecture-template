@@ -16,7 +16,7 @@ void main() async {
 
   BuildConfig.instantiate(
     config: envConfig,
-    type: Environment.DEVELOPMENT,
+    type: Environment.PRODUCTION,
   );
 
   runApp(
