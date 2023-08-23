@@ -63,19 +63,19 @@ android {
     productFlavors {
         development {
             dimension "default"
-            resValue "string", "app_name", "Dev Wozle"
+            resValue "string", "app_name", "Dev App"
             versionNameSuffix "-dev"
             applicationIdSuffix ".dev"
         }
         staging {
             dimension "default"
-            resValue "string", "app_name", "Stage Wozle"
+            resValue "string", "app_name", "Stage App"
             versionNameSuffix "-stage"
             applicationIdSuffix ".stag"
         }
         production {
             dimension "default"
-            resValue "string", "app_name", "Wozle"
+            resValue "string", "app_name", "App"
         }
     }
 }
