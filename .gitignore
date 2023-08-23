@@ -53,3 +53,5 @@ app.*.map.json
 
 # secrets
 **/*.env
+
+**/app_icon_*
