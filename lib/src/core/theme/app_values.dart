@@ -2,6 +2,7 @@ abstract class AppValues {
   static const double zero = 0;
   static const double infinity = double.infinity;
 
+  // Paddings
   static const double padding = 16;
   static const double paddingSmall = 10;
   static const double paddingXSmall = 8;
@@ -12,6 +13,7 @@ abstract class AppValues {
   static const double padding_2 = 2;
   static const double padding_3 = 3;
 
+  // Margins
   static const double margin = 16;
   static const double marginSmall = 8;
   static const double marginXSmall = 6;
@@ -27,9 +29,10 @@ abstract class AppValues {
   static const double margin_10 = 10;
   static const double margin_30 = 30;
   static const double margin_20 = 20;
-  
+
   static const double space = 96;
 
+  // Radius
   static const double radius = 16;
   static const double radiusSmall = 8;
   static const double radiusLarge = 24;
@@ -38,6 +41,7 @@ abstract class AppValues {
   static const double radius_12 = 12;
   static const double radiusRoundedButton = 24;
 
+  // Elevations
   static const double elevationLvl0 = 0;
   static const double elevationLvl1 = 1;
   static const double elevationLvl2 = 3;
@@ -51,6 +55,7 @@ abstract class AppValues {
   static const double listBottomEmptySpace = 200;
   static const double maxButtonWidth = 496;
 
+  // Icons
   static const double icon = 24;
   static const double iconSmall = 16;
   static const double iconXall = 12;
