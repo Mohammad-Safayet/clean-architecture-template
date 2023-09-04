@@ -1,4 +1,4 @@
-import 'package:clean_architecture/src/core/routes/app_routes.dart';
+import 'package:clean_architecture/src/core/routes/app_pages.dart';
 import 'package:flutter/material.dart';
 
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
@@ -6,7 +6,6 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:clean_architecture/l10n/l10n.dart';
 import 'package:clean_architecture/src/core/theme/app_theme.dart';
 import 'package:clean_architecture/src/core/config/build_config.dart';
-
 
 class Application extends StatefulWidget {
   const Application({
@@ -30,10 +29,10 @@ class _ApplicationState extends State<Application> {
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,
       themeMode: ThemeMode.system,
-      routerConfig: AppRoutes.routes,
-      routerDelegate: AppRoutes.routes.routerDelegate,
-      routeInformationParser: AppRoutes.routes.routeInformationParser,
-      routeInformationProvider: AppRoutes.routes.routeInformationProvider,
+      routerConfig: AppPages.routes,
+      routerDelegate: AppPages.routes.routerDelegate,
+      routeInformationParser: AppPages.routes.routeInformationParser,
+      routeInformationProvider: AppPages.routes.routeInformationProvider,
     );
   }
 }
