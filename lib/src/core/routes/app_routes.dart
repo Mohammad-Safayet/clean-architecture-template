@@ -1,6 +1,6 @@
 part of 'app_pages.dart';
 
-abstract class AppRoutes {
+abstract class Routes {
   static const HOME = _Path.HOME;
 }
 
