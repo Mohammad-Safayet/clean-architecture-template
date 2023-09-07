@@ -1,16 +1,24 @@
 import 'package:flutter/material.dart';
+import 'package:clean_architecture/src/core/constants/app_text_styles.dart';
 
 class AppBarTitle extends StatelessWidget {
   final String text;
+  final TextAlign textAlign;
+  final TextStyle textStyle;
 
-  const AppBarTitle({Key? key, required this.text}) : super(key: key);
+  const AppBarTitle({
+    Key? key,
+    required this.text,
+    this.textAlign = TextAlign.center,
+    this.textStyle = AppTextStyles.appBarTitleLarge,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Text(
       text,
-      // style: pageTitleStyle,
-      textAlign: TextAlign.center,
+      style: textStyle,
+      textAlign: textAlign,
     );
   }
 }
