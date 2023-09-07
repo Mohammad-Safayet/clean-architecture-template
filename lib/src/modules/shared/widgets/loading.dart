@@ -1,16 +1,16 @@
-import 'package:clean_architecture/src/core/theme/app_theme.dart';
+import 'package:clean_architecture/src/core/constants/app_theme.dart';
 import 'package:flutter/material.dart';
 
 class Loading extends StatelessWidget {
   final Widget child;
-  final Color bgColor;
+  final Color? bgColor;
   final EdgeInsetsGeometry? padding;
   final double borderRadius;
 
   const Loading({
     Key? key,
     required this.child,
-    this.bgColor = Colors.black,
+    this.bgColor,
     this.padding,
     this.borderRadius = 12.0,
   }) : super(key: key);
@@ -29,10 +29,10 @@ class Loading extends StatelessWidget {
             offset: const Offset(0, 3),
           ),
         ],
-        color: bgColor,
+        color: bgColor ?? AppTheme.currentTheme.colorScheme.onPrimary,
       ),
       child: CircularProgressIndicator(
-        color: bgColor,
+        color: AppTheme.currentTheme.colorScheme.primary,
       ),
     );
   }
