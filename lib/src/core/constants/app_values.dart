@@ -81,5 +81,19 @@ abstract class AppValues {
   static const int defaultDebounceTimeInMilliSeconds = 1000;
   static const int defaultThrottleTimeInMilliSeconds = 500;
 
-  static const double height_16 = 16;
+  // NavigationBar height
+  static const double navBarHeight = 56.0;
+
+  // Height
+  static const double height_28 = 2.8;
+  static const double height_24 = 2.4;
+  static const double height_20 = 2.0;
+  static const double height_16 = 1.6;
+
+  // Font sizes
+  static const double fontSize_24 = 24;
+  static const double fontSize_22 = 22;
+  static const double fontSize_16 = 16;
+  static const double fontSize_14 = 14;
+  static const double fontSize_12 = 12;
 }
