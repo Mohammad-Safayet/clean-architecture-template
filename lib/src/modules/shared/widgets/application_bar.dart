@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:clean_architecture/src/modules/shared/widgets/app_bar_title.dart';
-import 'package:clean_architecture/src/core/theme/app_theme.dart';
+import 'package:clean_architecture/src/core/constants/app_theme.dart';
 
 class ApplicationBar extends StatelessWidget implements PreferredSizeWidget {
   final String appBarTitleText;
