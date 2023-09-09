@@ -23,16 +23,16 @@ class Loading extends StatelessWidget {
         borderRadius: BorderRadius.circular(borderRadius),
         boxShadow: [
           BoxShadow(
-            color: AppTheme.currentTheme.shadowColor.withOpacity(0.7),
+            color: Theme.of(context).shadowColor.withOpacity(0.7),
             spreadRadius: 3,
             blurRadius: 8,
             offset: const Offset(0, 3),
           ),
         ],
-        color: bgColor ?? AppTheme.currentTheme.colorScheme.onPrimary,
+        color: bgColor ?? Theme.of(context).colorScheme.onPrimary,
       ),
       child: CircularProgressIndicator(
-        color: AppTheme.currentTheme.colorScheme.primary,
+        color: Theme.of(context).colorScheme.primary,
       ),
     );
   }
