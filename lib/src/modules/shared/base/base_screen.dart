@@ -29,7 +29,7 @@ abstract class BaseScreen extends StatelessWidget {
     return AnnotatedRegion(
       value: SystemUiOverlayStyle(
         //Status bar color for android
-        statusBarColor: statusBarColor(),
+        statusBarColor: statusBarColor(context),
         statusBarIconBrightness: Brightness.dark,
       ),
       child: Material(
@@ -41,7 +41,7 @@ abstract class BaseScreen extends StatelessWidget {
 
   Widget pageScaffold(BuildContext context) {
     return Scaffold(
-      backgroundColor: pageBackgroundColor(),
+      backgroundColor: pageBackgroundColor(context),
       key: globalKey,
       appBar: appBar(context),
       floatingActionButton: floatingActionButton(),
@@ -58,8 +58,8 @@ abstract class BaseScreen extends StatelessWidget {
     );
   }
 
-  Color pageBackgroundColor() {
-    return AppTheme.currentTheme.colorScheme.background;
+  Color pageBackgroundColor(BuildContext context) {
+    return Theme.of(context).colorScheme.background;
   }
 
   Widget? floatingActionButton() {
@@ -78,7 +78,7 @@ abstract class BaseScreen extends StatelessWidget {
     return null;
   }
 
-  Color statusBarColor() {
-    return AppTheme.currentTheme.colorScheme.onPrimary;
+  Color statusBarColor(BuildContext context) {
+    return Theme.of(context).colorScheme.onPrimary;
   }
 }
