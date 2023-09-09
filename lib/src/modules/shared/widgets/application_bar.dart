@@ -29,7 +29,7 @@ class ApplicationBar extends StatelessWidget implements PreferredSizeWidget {
       automaticallyImplyLeading: isBackButtonEnabled,
       actions: actions,
       iconTheme: IconThemeData(
-        color: AppTheme.currentTheme.colorScheme.primary,
+        color: Theme.of(context).colorScheme.onPrimary,
       ),
       title: AppBarTitle(text: appBarTitleText),
       leading: drawerIcon,
