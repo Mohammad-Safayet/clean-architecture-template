@@ -1,4 +1,3 @@
-import 'package:clean_architecture/src/core/constants/app_theme.dart';
 import 'package:flutter/material.dart';
 
 class Loading extends StatelessWidget {

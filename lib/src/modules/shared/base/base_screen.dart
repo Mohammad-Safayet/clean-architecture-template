@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:logger/logger.dart';
 
-import 'package:clean_architecture/src/core/constants/app_theme.dart';
 import 'package:clean_architecture/src/core/config/build_config.dart';
 
 abstract class BaseScreen extends StatelessWidget {
