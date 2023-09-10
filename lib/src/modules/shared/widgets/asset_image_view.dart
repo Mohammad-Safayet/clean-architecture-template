@@ -45,7 +45,6 @@ class AssetImageView extends StatelessWidget {
           path,
           height: height,
           width: width,
-          fit: BoxFit.cover,
           colorFilter: ColorFilter.mode(
             color ?? Colors.black,
             BlendMode.srcIn,
