@@ -22,13 +22,13 @@ class ApplicationBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      backgroundColor: Theme.of(context).colorScheme.primary,
+      backgroundColor: Theme.of(context).colorScheme.surface,
       centerTitle: true,
       elevation: 0,
       automaticallyImplyLeading: isBackButtonEnabled,
       actions: actions,
       iconTheme: IconThemeData(
-        color: Theme.of(context).colorScheme.onPrimary,
+        color: Theme.of(context).colorScheme.onSurface,
       ),
       title: AppBarTitle(text: appBarTitleText),
       leading: drawerIcon,
