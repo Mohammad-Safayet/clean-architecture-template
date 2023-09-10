@@ -31,9 +31,9 @@ class _ApplicationState extends State<Application> {
       darkTheme: appThemeDark,
       themeMode: ThemeMode.dark,
       routerConfig: AppPages.routes,
-      routerDelegate: AppPages.routes.routerDelegate,
-      routeInformationParser: AppPages.routes.routeInformationParser,
-      routeInformationProvider: AppPages.routes.routeInformationProvider,
+      // routerDelegate: AppPages.routes.routerDelegate,
+      // routeInformationParser: AppPages.routes.routeInformationParser,
+      // routeInformationProvider: AppPages.routes.routeInformationProvider,
     );
   }
 }
