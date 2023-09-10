@@ -24,7 +24,6 @@ abstract class AppPages {
         },
         branches: [
           StatefulShellBranch(
-            navigatorKey: _sectionNavigatorKey,
             routes: [
               GoRoute(
                 path: Routes.COUNTER,
@@ -33,7 +32,6 @@ abstract class AppPages {
             ],
           ),
           StatefulShellBranch(
-            navigatorKey: _sectionNavigatorKey,
             routes: [
               GoRoute(
                 path: Routes.STORE,
@@ -42,7 +40,6 @@ abstract class AppPages {
             ],
           ),
           StatefulShellBranch(
-            navigatorKey: _sectionNavigatorKey,
             routes: [
               GoRoute(
                 path: Routes.PROFILE,
