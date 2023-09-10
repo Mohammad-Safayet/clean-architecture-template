@@ -22,32 +22,42 @@ class BottomNavBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
+      onTap: _onTap,
       showSelectedLabels: false,
       showUnselectedLabels: false,
-      unselectedFontSize: AppValues.zero,
       selectedFontSize: AppValues.zero,
-      backgroundColor: Theme.of(context).colorScheme.surface,
-      elevation: AppValues.elevationLvl2,
-      onTap: _onTap,
+      unselectedFontSize: AppValues.zero,
+      elevation: AppValues.elevationLvl3,
+      type: BottomNavigationBarType.fixed,
       currentIndex: navigationShell.currentIndex,
+      backgroundColor: Theme.of(context).colorScheme.surface,
       items: [
         BottomNavBarItem(
           context: context,
           navLabel: "Home",
-          iconActive: Icons.home_outlined,
-          iconInactive: Icons.home_rounded,
+          iconActive: Icons.home_rounded,
+          iconInactive: Icons.home_outlined,
+          padding: const EdgeInsets.symmetric(
+            vertical: AppValues.padding_3,
+          ),
         ),
         BottomNavBarItem(
           context: context,
-          navLabel: "Home",
-          iconActive: Icons.home_outlined,
-          iconInactive: Icons.home_rounded,
+          navLabel: "Store",
+          iconActive: Icons.store_rounded,
+          iconInactive: Icons.store_outlined,
+          padding: const EdgeInsets.symmetric(
+            vertical: AppValues.padding_3,
+          ),
         ),
         BottomNavBarItem(
           context: context,
-          navLabel: "Home",
-          iconActive: Icons.home_outlined,
-          iconInactive: Icons.home_rounded,
+          navLabel: "Profile",
+          iconActive: Icons.person_rounded,
+          iconInactive: Icons.person_outline,
+          padding: const EdgeInsets.symmetric(
+            vertical: AppValues.padding_3,
+          ),
         ),
       ],
     );
