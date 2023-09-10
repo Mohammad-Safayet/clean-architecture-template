@@ -9,6 +9,7 @@ class BottomNavBarItem implements BottomNavigationBarItem {
     required this.navLabel,
     required this.iconActive,
     required this.iconInactive,
+    this.padding = EdgeInsets.zero,
     this.decoration,
     this.hint,
   });
@@ -19,6 +20,7 @@ class BottomNavBarItem implements BottomNavigationBarItem {
   final IconData iconInactive;
   final BoxDecoration? decoration;
   final String? hint;
+  final EdgeInsetsGeometry padding;
 
   @override
   Widget get activeIcon => _buildIcon(true);
@@ -37,19 +39,36 @@ class BottomNavBarItem implements BottomNavigationBarItem {
 
   Widget _buildIcon(bool isActive) {
     return Container(
-      margin: const EdgeInsets.only(top: AppValues.margin_10),
+      margin: const EdgeInsets.all(
+        AppValues.margin_6,
+      ),
+      padding: padding,
       height: AppValues.navBarHeight,
+      width: AppValues.infinity,
       decoration: decoration,
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Icon(
-            isActive ? iconActive : iconInactive,
-            color: isActive
-                ? Theme.of(context).colorScheme.onSecondaryContainer
-                : Theme.of(context).colorScheme.onSurfaceVariant,
+          Container(
+            width: AppValues.icon * 2.5,
+            height: AppValues.icon * 1.25,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10.0),
+              color: isActive
+                  ? Theme.of(context).colorScheme.secondaryContainer
+                  : Theme.of(context).colorScheme.surface,
+            ),
+            child: Icon(
+              isActive ? iconActive : iconInactive,
+              color: isActive
+                  ? Theme.of(context).colorScheme.onSecondaryContainer
+                  : Theme.of(context).colorScheme.onSurfaceVariant,
+              size: AppValues.icon,
+            ),
           ),
           Text(
             navLabel,
+            textAlign: TextAlign.center,
             style: AppTextStyles.navigationBarLable.copyWith(
               color: isActive
                   ? Theme.of(context).colorScheme.onSurface
