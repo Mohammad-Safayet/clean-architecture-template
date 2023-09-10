@@ -66,7 +66,6 @@ abstract class AppValues {
   static const double icon_18 = 18;
   static const double icon_14 = 14;
   static const double icon_28 = 28;
-  static const double appBarIcon = 32;
 
   static const double customAppBarSize = 144.0;
   static const double collapsedAppBarSize = 70.0;
