@@ -24,6 +24,20 @@ abstract class AppTextStyles {
     fontWeight: FontWeight.w500,
   );
 
+  static const drawerHeaderTitle = TextStyle(
+    height: AppValues.height_16,
+    fontSize: AppValues.fontSize_22,
+    letterSpacing: 0.1,
+    fontWeight: FontWeight.w600,
+  );
+
+  static const drawerHeaderSubTitle = TextStyle(
+    height: AppValues.height_16,
+    fontSize: AppValues.fontSize_14,
+    letterSpacing: 0.15,
+    fontWeight: FontWeight.w400,
+  );
+
   static const titleBig = TextStyle(
     height: AppValues.height_28,
     fontSize: AppValues.fontSize_24,
