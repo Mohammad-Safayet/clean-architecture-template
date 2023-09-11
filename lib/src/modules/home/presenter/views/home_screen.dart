@@ -20,7 +20,11 @@ class HomeScreen extends BaseScreen {
   PreferredSizeWidget? appBar(BuildContext context) {
     return ApplicationBar(
       appBarTitleText: _envConfig.appName,
-      drawerIcon: DrawerIconButton(),
+      drawerIcon: DrawerIconButton(
+        callback: (context) {
+          Scaffold.of(context).openDrawer();
+        },
+      ),
     );
   }
 
