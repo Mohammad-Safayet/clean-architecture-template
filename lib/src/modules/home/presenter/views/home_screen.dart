@@ -1,4 +1,5 @@
 import 'package:clean_architecture/src/modules/home/presenter/widgets/drawer_icon_button.dart';
+import 'package:clean_architecture/src/modules/home/presenter/widgets/nav_drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -38,5 +39,10 @@ class HomeScreen extends BaseScreen {
     return BottomNavBar(
       navigationShell: navigationShell,
     );
+  }
+
+  @override
+  Widget? drawer() {
+    return NavDrawer();
   }
 }
