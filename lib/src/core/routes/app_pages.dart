@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-import 'package:clean_architecture/src/modules/counter/counter_screen.dart';
-import 'package:clean_architecture/src/modules/profile/profile_screen.dart';
-import 'package:clean_architecture/src/modules/store/store_screen.dart';
 import 'package:clean_architecture/src/modules/home/home.dart';
+import 'package:clean_architecture/src/modules/counter/counter.dart';
+import 'package:clean_architecture/src/modules/store/store_screen.dart';
+import 'package:clean_architecture/src/modules/profile/profile_screen.dart';
 
 part 'app_routes.dart';
 
