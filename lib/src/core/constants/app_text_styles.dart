@@ -45,6 +45,13 @@ abstract class AppTextStyles {
     fontWeight: FontWeight.w500,
   );
 
+  static const bodyLarge = TextStyle(
+    height: AppValues.height_24,
+    fontSize: AppValues.fontSize_16,
+    letterSpacing: 0.25,
+    fontWeight: FontWeight.w600,
+  );
+
   static const body = TextStyle(
     height: AppValues.height_20,
     fontSize: AppValues.fontSize_14,
