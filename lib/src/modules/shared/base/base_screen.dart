@@ -43,7 +43,7 @@ abstract class BaseScreen extends StatelessWidget {
       backgroundColor: pageBackgroundColor(context),
       key: globalKey,
       appBar: appBar(context),
-      floatingActionButton: floatingActionButton(),
+      floatingActionButton: floatingActionButton(context),
       body: pageContent(context),
       bottomNavigationBar: bottomNavigationBar(),
       drawer: drawer(),
@@ -61,7 +61,7 @@ abstract class BaseScreen extends StatelessWidget {
     return Theme.of(context).colorScheme.background;
   }
 
-  Widget? floatingActionButton() {
+  Widget? floatingActionButton(BuildContext context) {
     return null;
   }
 
