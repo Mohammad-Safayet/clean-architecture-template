@@ -13,7 +13,9 @@ class CounterFab extends StatelessWidget with BaseWidgetMixin {
   @override
   Widget body(BuildContext context) {
     return FloatingActionButton(
-      onPressed: onPressed(),
+      onPressed: () {
+        onPressed();
+      },
       tooltip: "Icrement counter",
       child: const Icon(
         Icons.add_rounded,
